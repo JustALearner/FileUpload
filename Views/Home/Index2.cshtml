@@ -1,0 +1,150 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index2</title>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap/js")
+    @Scripts.Render("~/Home/Index")
+    @Scripts.Render("~/Content/bootstrap-fileinput/js")
+
+    @Styles.Render("~/bundles/bootstrap/css")
+    @Styles.Render("~/Content/bootstrap-fileinput/css")
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <button id="btn_import" type="button" class="btn btn-primary btn-lg">
+                <span class="glyphicon glyphicon-import" aria-hidden="true"></span>Browse
+            </button>
+            <button class="btn btn-primary btn-lg" type="button"><span class="glyphicon glyphicon-qrcode"></span> Generate</button>
+        </div>
+        <div class="row">
+
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            Name
+                        </th>
+                        <th>
+                            Upload Date
+                        </th>
+                        <th>
+                            Size
+                        </th>
+                        <th>
+                            Uri
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            1
+                        </td>
+                        <td>
+                            TB - Monthly
+                        </td>
+                        <td>
+                            01/04/2012
+                        </td>
+                        <td>
+                            Default
+                        </td>
+                    </tr>
+                    <tr class="success">
+                        <td>
+                            1
+                        </td>
+                        <td>
+                            TB - Monthly
+                        </td>
+                        <td>
+                            01/04/2012
+                        </td>
+                        <td>
+                            Approved
+                        </td>
+                    </tr>
+                    <tr class="error">
+                        <td>
+                            2
+                        </td>
+                        <td>
+                            TB - Monthly
+                        </td>
+                        <td>
+                            02/04/2012
+                        </td>
+                        <td>
+                            Declined
+                        </td>
+                    </tr>
+                    <tr class="warning">
+                        <td>
+                            3
+                        </td>
+                        <td>
+                            TB - Monthly
+                        </td>
+                        <td>
+                            03/04/2012
+                        </td>
+                        <td>
+                            Pending
+                        </td>
+                    </tr>
+                    <tr class="info">
+                        <td>
+                            4
+                        </td>
+                        <td>
+                            TB - Monthly
+                        </td>
+                        <td>
+                            04/04/2012
+                        </td>
+                        <td>
+                            Call in to confirm
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <form>
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Select Apk</h4>
+                        </div>
+                        <div class="modal-body">
+                          
+                            <input type="file" name="txt_file" id="txt_file" multiple class="file-loading" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    @* <div> *@
+    @*     <button id="btn_import" type="button" class="btn btn-primary btn-lg"> *@
+    @*         <span class="glyphicon glyphicon-import" aria-hidden="true"></span>Browse *@
+    @*     </button> *@
+    @* </div> *@
+
+
+
+</body>
+</html>
